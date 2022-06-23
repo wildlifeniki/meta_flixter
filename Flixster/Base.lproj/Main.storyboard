@@ -28,20 +28,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FFO-Da-IFL">
-                                                    <rect key="frame" x="20" y="23" width="100" height="100"/>
+                                                    <rect key="frame" x="20" y="23" width="100" height="150"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="M9C-41-SUQ"/>
-                                                        <constraint firstAttribute="height" constant="100" id="f0y-sR-mqH"/>
+                                                        <constraint firstAttribute="height" constant="150" id="f0y-sR-mqH"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyu-sU-OrP">
-                                                    <rect key="frame" x="128" y="23" width="258" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="128" y="23" width="258" height="30"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihd-My-0WB">
-                                                    <rect key="frame" x="128" y="51.5" width="258" height="20.5"/>
+                                                    <rect key="frame" x="128" y="61" width="258" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -95,9 +95,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSa-jT-YHb">
-                                <rect key="frame" x="142" y="186" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulV-5m-4o9">
+                                <rect key="frame" x="20" y="396" width="374" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3PW-VL-G6Y">
+                                <rect key="frame" x="20" y="88" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="gEl-Ej-pKv"/>
+                                    <constraint firstAttribute="width" constant="200" id="i8f-LW-qpF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSa-jT-YHb">
+                                <rect key="frame" x="20" y="438" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -105,10 +117,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hv1-Uj-aYI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hv1-Uj-aYI" firstAttribute="trailing" secondItem="KSa-jT-YHb" secondAttribute="trailing" constant="20" id="0eu-qc-Xkd"/>
+                            <constraint firstItem="hv1-Uj-aYI" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KSa-jT-YHb" secondAttribute="bottom" constant="50" id="O2F-i2-HEi"/>
+                            <constraint firstItem="ulV-5m-4o9" firstAttribute="top" secondItem="3PW-VL-G6Y" secondAttribute="bottom" constant="8" symbolic="YES" id="R1o-45-6Cd"/>
+                            <constraint firstItem="hv1-Uj-aYI" firstAttribute="trailing" secondItem="ulV-5m-4o9" secondAttribute="trailing" constant="20" id="Rxp-Za-KaR"/>
+                            <constraint firstItem="3PW-VL-G6Y" firstAttribute="leading" secondItem="hv1-Uj-aYI" secondAttribute="leading" constant="20" id="jTh-Fj-TfC"/>
+                            <constraint firstItem="KSa-jT-YHb" firstAttribute="top" secondItem="ulV-5m-4o9" secondAttribute="bottom" constant="5" id="o2W-Yq-OCp"/>
+                            <constraint firstItem="KSa-jT-YHb" firstAttribute="leading" secondItem="hv1-Uj-aYI" secondAttribute="leading" constant="20" id="p1t-Ye-LUR"/>
+                            <constraint firstItem="3PW-VL-G6Y" firstAttribute="top" secondItem="hv1-Uj-aYI" secondAttribute="top" id="rbN-4G-d45"/>
+                            <constraint firstItem="ulV-5m-4o9" firstAttribute="leading" secondItem="hv1-Uj-aYI" secondAttribute="leading" constant="20" id="swC-cT-F06"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bVB-lg-Iqz"/>
                     <connections>
-                        <outlet property="movieTitleLabel" destination="KSa-jT-YHb" id="MuZ-Dc-wZM"/>
+                        <outlet property="movieImageView" destination="3PW-VL-G6Y" id="dYy-86-3bG"/>
+                        <outlet property="movieSynopsisLabel" destination="KSa-jT-YHb" id="J9M-bM-Uf7"/>
+                        <outlet property="movieTitleLabel" destination="ulV-5m-4o9" id="gPX-X6-kqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPC-ng-GCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

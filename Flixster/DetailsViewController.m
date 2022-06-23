@@ -6,9 +6,12 @@
 //
 
 #import "DetailsViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface DetailsViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *movieTitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *movieSynopsisLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *movieImageView;
 
 @end
 
@@ -18,6 +21,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.movieTitleLabel.text = self.movie[@"title"];
+    self.movieSynopsisLabel.text = self.movie[@"overview"];
+    NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
+    NSString *posterURLString = self.movie[@"poster_path"];
+    NSString *fullPosterURL = [baseURLString stringByAppendingString:posterURLString];
+    NSURL *posterURL = [NSURL URLWithString:fullPosterURL];
+    [self.movieImageView setImageWithURL:posterURL];
+    
 }
 
 /*
