@@ -6,6 +6,7 @@ target 'Flixster' do
   use_frameworks!
 
   # Pods for Flixster
+pod 'AFNetworking'
 
   target 'FlixsterTests' do
     inherit! :search_paths
