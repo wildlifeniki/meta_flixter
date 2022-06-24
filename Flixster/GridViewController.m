@@ -8,8 +8,9 @@
 #import "GridViewController.h"
 #import "MovieCollectionViewCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "DetailsViewController.h"
 
-@interface GridViewController ()
+@interface GridViewController () <UICollectionViewDataSource>
 @property (strong, nonatomic) IBOutlet UICollectionView *movieCollectionView;
 @property (nonatomic, strong) NSArray *myArray;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -50,12 +51,12 @@
     
 }
 
-- (NSInteger)movieCollectionView:(UICollectionView *)movieCollectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.myArray.count;
 }
 
-- (UICollectionViewCell *)movieCollectionView:(UICollectionView *)movieCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    MovieCollectionViewCell *cell = [movieCollectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    MovieCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     NSDictionary *movie = self.myArray[indexPath.row];
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = movie[@"poster_path"];
@@ -63,16 +64,19 @@
     NSURL *posterURL = [NSURL URLWithString:fullPosterURL];
     [cell.movieImageView setImageWithURL:posterURL];
     return cell;
+    
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     // Get the new view controller using [segue destinationViewController].
+     // Pass the selected object to the new view controller.
+     DetailsViewController *viewController = segue.destinationViewController;
+     viewController.movie = self.myArray[self.movieCollectionView.indexPathsForSelectedItems[0].row];
+ }
+
 
 @end
