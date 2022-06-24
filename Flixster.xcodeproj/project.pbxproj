@@ -19,6 +19,8 @@
 		847D96A5286404290044C1F5 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D96A4286404290044C1F5 /* MovieViewController.m */; };
 		847D96A8286405280044C1F5 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D96A7286405280044C1F5 /* MovieCell.m */; };
 		847D96AB286411950044C1F5 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D96AA286411950044C1F5 /* DetailsViewController.m */; };
+		847D96AE286539E40044C1F5 /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D96AD286539E40044C1F5 /* GridViewController.m */; };
+		847D96B128653B8A0044C1F5 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D96B028653B8A0044C1F5 /* MovieCollectionViewCell.m */; };
 		99933629855EC85C6CA33CE1 /* Pods_Flixster_FlixsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D2160E5D08DE2C4A5815D7 /* Pods_Flixster_FlixsterUITests.framework */; };
 		AA44640D65EDF37250E1A530 /* Pods_FlixsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBDFE6A19CE8874DFFB153A /* Pods_FlixsterTests.framework */; };
 		BCF6BA44FD0F5D3EE0387B77 /* Pods_Flixster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F203FCE896F9AAD551163C /* Pods_Flixster.framework */; };
@@ -68,6 +70,10 @@
 		847D96A7286405280044C1F5 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		847D96A9286411950044C1F5 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		847D96AA286411950044C1F5 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		847D96AC286539E40044C1F5 /* GridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		847D96AD286539E40044C1F5 /* GridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridViewController.m; sourceTree = "<group>"; };
+		847D96AF28653B8A0044C1F5 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		847D96B028653B8A0044C1F5 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		9909432ED8DBE8135365C59E /* Pods-Flixster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster.release.xcconfig"; path = "Target Support Files/Pods-Flixster/Pods-Flixster.release.xcconfig"; sourceTree = "<group>"; };
 		B917EB68BBE9D9362B685E20 /* Pods-Flixster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster.debug.xcconfig"; path = "Target Support Files/Pods-Flixster/Pods-Flixster.debug.xcconfig"; sourceTree = "<group>"; };
 		BEBDFE6A19CE8874DFFB153A /* Pods_FlixsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +165,10 @@
 				847D9666286105080044C1F5 /* SceneDelegate.h */,
 				847D9667286105080044C1F5 /* SceneDelegate.m */,
 				847D966C286105080044C1F5 /* Main.storyboard */,
+				847D96AF28653B8A0044C1F5 /* MovieCollectionViewCell.h */,
+				847D96B028653B8A0044C1F5 /* MovieCollectionViewCell.m */,
+				847D96AC286539E40044C1F5 /* GridViewController.h */,
+				847D96AD286539E40044C1F5 /* GridViewController.m */,
 				847D96A6286405280044C1F5 /* MovieCell.h */,
 				847D96A7286405280044C1F5 /* MovieCell.m */,
 				847D966F2861050A0044C1F5 /* Assets.xcassets */,
@@ -427,6 +437,8 @@
 				847D9665286105080044C1F5 /* AppDelegate.m in Sources */,
 				847D96A8286405280044C1F5 /* MovieCell.m in Sources */,
 				847D96762861050A0044C1F5 /* main.m in Sources */,
+				847D96B128653B8A0044C1F5 /* MovieCollectionViewCell.m in Sources */,
+				847D96AE286539E40044C1F5 /* GridViewController.m in Sources */,
 				847D96AB286411950044C1F5 /* DetailsViewController.m in Sources */,
 				847D9668286105080044C1F5 /* SceneDelegate.m in Sources */,
 				847D96A5286404290044C1F5 /* MovieViewController.m in Sources */,
