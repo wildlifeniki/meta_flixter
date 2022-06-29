@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ECC1712286CB152001E9D1B /* Flixter.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECC1711286CB152001E9D1B /* Flixter.xcassets */; };
 		847D9665286105080044C1F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D9664286105080044C1F5 /* AppDelegate.m */; };
 		847D9668286105080044C1F5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D9667286105080044C1F5 /* SceneDelegate.m */; };
 		847D966E286105080044C1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D966C286105080044C1F5 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		33F203FCE896F9AAD551163C /* Pods_Flixster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D2160E5D08DE2C4A5815D7 /* Pods_Flixster_FlixsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixster_FlixsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		541658F28FCE80F8625E328B /* Pods-Flixster-FlixsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster-FlixsterUITests.release.xcconfig"; path = "Target Support Files/Pods-Flixster-FlixsterUITests/Pods-Flixster-FlixsterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7ECC1711286CB152001E9D1B /* Flixter.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flixter.xcassets; sourceTree = "<group>"; };
 		839F7E229B4EBE13CDAA7A81 /* Pods-Flixster-FlixsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster-FlixsterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Flixster-FlixsterUITests/Pods-Flixster-FlixsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		847D9660286105080044C1F5 /* Flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D9663286105080044C1F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				847D96712861050A0044C1F5 /* LaunchScreen.storyboard */,
 				847D96742861050A0044C1F5 /* Info.plist */,
 				847D96752861050A0044C1F5 /* main.m */,
+				7ECC1711286CB152001E9D1B /* Flixter.xcassets */,
 			);
 			path = Flixster;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				847D96732861050A0044C1F5 /* LaunchScreen.storyboard in Resources */,
 				847D96702861050A0044C1F5 /* Assets.xcassets in Resources */,
+				7ECC1712286CB152001E9D1B /* Flixter.xcassets in Resources */,
 				847D966E286105080044C1F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
